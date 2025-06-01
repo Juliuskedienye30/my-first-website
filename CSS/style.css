@@ -1,8 +1,10 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f8fa;
-  color: #333;
+ background: url('../image/jk.jpg') no-repeat center center fixed;
+  font-family: rgba(243, 6, 6, 0.986);
+  background-color: #1498da;
+   
+  color: #161002fd;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -13,16 +15,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #444;
+  background-color: #031b24;
   padding: 15px 30px;
-  color: white;
+  color: rgb(36, 23, 221);
 }
 
 .logo a {
-  color: white;
+    
+  color: rgb(250, 251, 252);
   text-decoration: none;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
+
 }
 
 .nav-links {
@@ -32,30 +36,35 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: rgb(240, 235, 235);
   text-decoration: none;
 }
 
 .nav-links a:hover {
-  color: #1abc9c;
+  color: #0a0a0a;
 }
 
 /* Hero */
 #hero {
+   text-align: center; 
   padding: 50px 20px;
-  background-color: #e3f2fd;
+  background-color: #ecf0f3;
 }
 
 .profile-image {
-  width: 200px;
+  width: 150px;
   height: auto;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 50px;
+  
 }
 
 /* Sections */
 section {
+    background-color: rgb(236, 230, 230);
   padding: 40px 20px;
+
+
 }
 
 /* Contact Form */
@@ -64,13 +73,13 @@ form input, form textarea {
   width: 80%;
   margin: 10px 0;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #e4dddd;
 }
 
 form button {
   padding: 10px 20px;
   background-color: #1abc9c;
-  color: white;
+  color: rgb(22, 1, 1);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -81,4 +90,64 @@ footer {
   background-color: #333;
   color: white;
   padding: 20px;
+}
+#skills ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+#projects {
+    background: url('../image/jk.jpg') no-repeat center center fixed;
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+}
+
+#projects h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project {
+  background-color:rgb(236, 230, 230);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #1abc9c;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+  font-size: 22px;
+  color: #080808;
+  margin-bottom: 10px;
+}
+
+.project p {
+    
+  font-size: 16px;
+  color: #241c1c;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #161d1b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #1e21f8a6;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
 }
