@@ -3,16 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
+  <title>Julius Kedienye | Portfolio</title>
+  <meta
+    name="description"
+    content="Julius Kedienye's personal tech portfolio showcasing web development and cybersecurity projects."
+  />
+  <meta
+    name="keywords"
+    content="Julius Kedienye, portfolio, web developer, cybersecurity, IT, Kenya"
+  />
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
 
   <!-- Link to CSS -->
   <link rel="stylesheet" href="CSS/style.css" />
 
   <!-- Link to JS -->
   <script src="JS/script.js" defer></script>
+
+  <style>
+    /* ====== INLINE STYLES FOR THANK-YOU SECTION ====== */
+    .thank-you-container {
+      display: none;
+      background-color: #f0f8ff;
+      padding: 60px 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .thank-you-container h2 {
+      color: #1abc9c;
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+    .thank-you-container p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    .thank-you-container a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #1abc9c;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .thank-you-container a:hover {
+      background-color: #16a085;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header and Navigation -->
+  <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo">
@@ -28,20 +68,34 @@
     </nav>
   </header>
 
+  <!-- Background Audio -->
+  <audio id="bg-audio" autoplay muted loop>
+    <source src="media/jo.mp3" type="audio/mpeg" />
+  </audio>
+  <div class="audio-controls">
+    <button id="toggle-audio" aria-label="Toggle Background Music">
+      🔊 Play Music
+    </button>
+  </div>
+
   <!-- Hero Section -->
   <section id="hero">
-  <h1>Welcome to Julius Kedienye Website</h1>
-  <p>I'm <strong>Julius Kedienye</strong>, passionate in tech and solving real-world problems through innovative solutions.</p>
-  <a href="#about" class="learn-more-btn">Learn More...</a>
-</section>
-
+    <h1>Welcome to Julius Kedienye Website</h1>
+    <p>
+      I'm <strong>Julius Kedienye</strong>, passionate about tech and solving
+      real-world problems through innovative solutions.
+    </p>
     <img src="image/julius.jpg" alt="Julius Photo" class="profile-image" />
+    <a href="#about" class="learn-more-btn">Learn More...</a>
   </section>
 
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p>I am Julius, a passionate trainee developer and a designer .</p>
+    <p>
+      I am Julius, passionate about technology and using it to solve
+      real-time problems.
+    </p>
   </section>
 
   <!-- Skills Section -->
@@ -59,56 +113,92 @@
 
   <!-- Projects Section -->
   <section id="projects">
-  <h2>My Projects</h2>
+    <h2>My Projects</h2>
 
-  <div class="project">
-    <h3>Personal Portfolio Website</h3>
-    <p>This website! A responsive personal portfolio built with HTML, CSS, and JavaScript to showcase my skills and journey in tech.</p>
-    <a href="https://github.com/julius-projects/portfolio" target="_blank">View on GitHub</a>
-  </div>
+    <div class="project">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        A responsive site built with HTML, CSS, and JavaScript to showcase my
+        skills and journey in tech.
+      </p>
+      <a
+        href="https://github.com/julius-projects/portfolio"
+        target="_blank"
+        >View on GitHub</a
+      >
+    </div>
 
-  <div class="project">
-    <h3>Security Audit Tool</h3>
-    <p>A Python-based command-line tool designed to scan websites for common vulnerabilities. This project is part of my ethical hacking practice.</p>
-    <a href="https://github.com/julius-projects/security-audit-tool" target="_blank">View on GitHub</a>
-  </div>
+    <div class="project">
+      <h3>Security Audit Tool</h3>
+      <p>
+        A Python-based tool to scan websites for vulnerabilities. Part of my
+        ethical hacking practice.
+      </p>
+      <a
+        href="https://github.com/julius-projects/security-audit-tool"
+        target="_blank"
+        >View on GitHub</a
+      >
+    </div>
 
-  <div class="project">
-    <h3>Student Registration System</h3>
-    <p>A PHP and MySQL project that manages student data securely and efficiently. Designed as part of my university coursework.</p>
-  </div>
+    <div class="project">
+      <h3>Student Registration System</h3>
+      <p>A PHP and MySQL system that manages student data securely.</p>
+    </div>
 
-  <div class="project">
-    <h3>My First Website</h3>
-    <p>A simple web app created to help understand how to make a good personal website. Built with HTML, CSS, and JS.</p>
-  </div>
+    <div class="project">
+      <h3>My First Website</h3>
+      <p>A basic web app made with HTML, CSS, and JavaScript.</p>
+    </div>
 
-  <div class="project">
-    <h3>Login Form with JS Validation</h3>
-    <p>A frontend project where users can log in, with JavaScript validating the inputs. Includes mobile responsiveness.</p>
-  </div>
-</section>
-
+    <div class="project">
+      <h3>Login Form with JS Validation</h3>
+      <p>Frontend login form with input validation and responsiveness.</p>
+    </div>
+  </section>
 
   <!-- Contact Section -->
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required /><br />
-    <input type="email" placeholder="Your Email" required /><br />
-    <textarea placeholder="Your Message" rows="5" required></textarea><br />
-    <button type="submit">Send</button>
-  </form>
+  <section id="contact">
+    <h2>Contact Me</h2>
 
-  <!-- Social Media Links -->
-  <div class="social-links">
-    <h3>Find me on</h3>
-    <a href="https://www.linkedin.com/in/julius-kedienye-32bb96259" target="_blank">LinkedIn</a> |
-    <a href="https://twitter.com" target="_blank">Twitter</a> |
-    <a href="https://instagram.com" target="_blank">Instagram</a>
-  </div>
-</section>
+    <!-- FORM (no _next hidden—will use JS fetch) -->
+    <form id="contact-form" action="https://formsubmit.co/ajax/juliuskedienye61@gmail.com" method="POST">
+      <!-- Anti-spam (optional) -->
+      <input type="hidden" name="_captcha" value="false" />
 
+      <!-- Visible Inputs -->
+      <input type="text" name="name" placeholder="Your Name" required /><br />
+      <input type="email" name="email" placeholder="Your Email" required /><br />
+      <textarea
+        name="message"
+        placeholder="Your Message"
+        rows="5"
+        required
+      ></textarea
+      ><br />
+      <button type="submit">Send</button>
+    </form>
+
+    <!-- HIDDEN Thank You Message -->
+    <div class="thank-you-container" id="thank-you-message">
+      <h2>Thank You! ✅</h2>
+      <p>Your message has been sent successfully. I will get back to you soon.</p>
+      <a href="#contact" id="back-to-form">Send Another Message</a>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <h3>Find me on</h3>
+      <a
+        href="https://www.linkedin.com/in/julius-kedienye-32bb96259"
+        target="_blank"
+        >LinkedIn</a
+      >
+      |
+      <a href="https://twitter.com" target="_blank">Twitter</a> |
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
